@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#wholesite {
+  display: grid;
+  width: 500px;
+  margin: auto;
+}
+
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+button {
+  width: calc(100% / 5);
+  height: 50px;
+  font-size: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+#image {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#image div {
+  padding: 50px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+#location-image {
+  width: 500px;
+  height: 300px;
+}
+
+#cat-image {
+  max-width: 100px;
+}
+
+#move-button {
+  text-align: center;
+}
+
+#move-button button {
+  margin: 5px;
+}
+
+#addorremove-container {
+  display: flex;
+  justify-content: center;
+}
+
+#add-button button,
+#remove-button button {
+  font-size: 10px;
+  min-width: 50px;
+}
+
+#jumpscare {
+  width: 0;
+  height: 0;
+}
+
+.active {
+  transition: all 1s ease-in-out;
+  transform: scale(1);
+}
+
+#joke-text {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
